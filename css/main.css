@@ -52,8 +52,9 @@
   display: block;
   margin: auto;
   max-width: 40vw;
-  -webkit-filter: grayscale(65%);
-          filter: grayscale(65%);
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+  border-radius: 3px;
 }
 
 @media only screen and (min-width: 600px) {
