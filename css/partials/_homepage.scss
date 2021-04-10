@@ -1,0 +1,30 @@
+.main-home {
+    flex-grow: 1;
+  .intro {
+    margin: auto;
+    h1 {
+      text-align: left;
+      font-weight: 500;
+      font-size: 4em;
+      line-height: 0.7em;
+    //   background: chocolate;
+    }
+    h2 {
+        text-align: left;
+      font-size: 0.7em;
+      font-weight: 200;
+      &::before {
+        content: "<!-- ";
+      }
+      &::after {
+        content: " -->";
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #homeh2 {
+    text-align: center;
+  }
+}

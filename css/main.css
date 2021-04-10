@@ -1,5 +1,79 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap");
+.main-home {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.main-home .intro {
+  margin: auto;
+}
+
+.main-home .intro h1 {
+  text-align: left;
+  font-weight: 500;
+  font-size: 4em;
+  line-height: 0.7em;
+}
+
+.main-home .intro h2 {
+  text-align: left;
+  font-size: 0.7em;
+  font-weight: 200;
+}
+
+.main-home .intro h2::before {
+  content: "<!-- ";
+}
+
+.main-home .intro h2::after {
+  content: " -->";
+}
+
+@media only screen and (min-width: 600px) {
+  #homeh2 {
+    text-align: center;
+  }
+}
+
+.main-about {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-about h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.main-about img {
+  display: block;
+  margin: auto;
+  max-width: 40vw;
+  -webkit-filter: grayscale(65%);
+          filter: grayscale(65%);
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .main-about {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .main-about img {
+    max-width: 25vw;
+    display: inline;
+    float: left;
+    margin: 15px 30px 15px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,9 +90,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
 }
 
 a {
@@ -55,15 +133,9 @@ nav a::after {
   visibility: hidden;
   overflow: hidden;
   font-weight: bold;
-  color: #595904;
 }
 
-.logo {
-  font-size: 2em;
-  margin-left: 30px;
-}
-
-ul {
+nav ul {
   width: 450px;
   height: 100%;
   display: -webkit-box;
@@ -77,51 +149,39 @@ ul {
   font-family: Raleway, Serif;
 }
 
-ul li {
+nav ul li {
   list-style: none;
   text-align: center;
 }
 
+.logo {
+  font-size: 2em;
+  margin-left: 30px;
+}
+
 main {
+  margin: 0 2em 3em 1.5em;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: "Source Code Pro", monospace;
-  text-transform: uppercase;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-main .intro {
-  margin: auto;
-}
-
-main h1 {
-  font-weight: 500;
-  font-size: 4em;
-  line-height: 0.7em;
-}
-
-main h2 {
-  font-size: 0.7em;
-  font-weight: 200;
-}
-
-main h2::before {
-  content: "<!-- ";
-}
-
-main h2::after {
-  content: " -->";
+p {
+  margin-top: 10px;
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,9 +240,6 @@ footer div i {
   }
   .col-s-12 {
     width: 100%;
-  }
-  h2 {
-    text-align: center;
   }
 }
 

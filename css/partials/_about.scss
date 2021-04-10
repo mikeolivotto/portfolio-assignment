@@ -1,0 +1,32 @@
+.main-about {
+  align-items: center;
+  h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    // background-color: lightblue;
+  }
+  img {
+    display: block;
+    margin: auto;
+    max-width: 40vw;
+    filter: grayscale(65%);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .main-about {
+    width: 80vw;
+    margin: 0 auto;
+    img {
+      max-width: 25vw;
+      display: inline;
+      float: left;
+      margin: 15px 30px 15px 0;
+    }
+  }
+  
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+}
