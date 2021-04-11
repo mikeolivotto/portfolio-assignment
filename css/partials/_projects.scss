@@ -1,0 +1,77 @@
+@mixin project-size {
+  height: 250px;
+  width: 250px;
+}
+
+.main-projects {
+  justify-content: center;
+  // background-color: lightskyblue;
+  margin-bottom: 45px;
+  h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    // background-color: lightblue;
+  }
+  a {
+    text-decoration: none;
+    color: white
+  }
+
+  .project {
+    @include project-size();
+    margin: 20px;
+    background-color: lightblue;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid black;
+    img {
+      object-fit: cover;
+      height: 85%;
+      width: 100%;
+    }
+    .project-name {
+      text-align: center;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #008CBA;
+      text-align: center;
+      &:hover {
+        opacity: 0.9;
+      }
+      p {
+        width: 85%;
+        margin-top: 0;
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .main-projects {
+    width: 80vw;
+    margin: 0 auto 45px; 
+}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+}

@@ -1,5 +1,6 @@
 .main-about {
   align-items: center;
+  margin-bottom: 45px;
   h2 {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -18,7 +19,7 @@
   /* For tablets: */
   .main-about {
     width: 80vw;
-    margin: 0 auto;
+    margin: 0 auto 45px;
     img {
       max-width: 25vw;
       display: inline;
