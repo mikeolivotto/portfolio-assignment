@@ -42,6 +42,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 45px;
+  line-height: 1.2em;
 }
 
 .main-about h2 {
@@ -56,6 +57,63 @@
   -webkit-filter: grayscale(50%);
           filter: grayscale(50%);
   border-radius: 3px;
+}
+
+.main-about .experience {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.main-about .experience .work-exp {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.main-about .experience .work-exp .job {
+  margin: 15px;
+  text-align: left;
+}
+
+.main-about .experience .work-exp h3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(0, 255, 0, 0.5);
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 0.8em;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.main-about .experience .work-exp .company {
+  font-weight: bold;
+}
+
+.main-about .experience .work-exp p {
+  margin: 0;
+}
+
+.main-about .skills {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.main-about .skills ul {
+  margin: auto;
+  list-style: none;
+}
+
+.break {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 0;
 }
 
 @media only screen and (min-width: 600px) {
