@@ -223,6 +223,52 @@
   /* For desktop: */
 }
 
+.main-blog {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 45px;
+}
+
+.main-blog .blog {
+  margin: 20px;
+}
+
+.main-blog h3 {
+  margin-top: 10px;
+}
+
+.main-blog img {
+  display: block;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 180px;
+  width: 300px;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .main-blog h3 {
+    text-align: left;
+  }
+  .main-blog img {
+    height: 130px;
+    width: 200px;
+    display: inline;
+    float: left;
+    margin: 15px 30px 15px 0;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  /* For desktop: */
+  .main-blog img {
+    height: 150px;
+    width: 280px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -240,6 +286,7 @@ body {
           flex-direction: column;
   min-height: 100vh;
   position: relative;
+  font-family: "Source Code Pro", monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -309,7 +356,7 @@ nav ul li {
 }
 
 main {
-  margin: 0 2em 3em 1.5em;
+  margin: 0 2em 3em 2em;
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: "Source Code Pro", monospace;
@@ -392,7 +439,7 @@ footer div i {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   /* For desktop: */
   .col-1 {
     width: 8.33%;
