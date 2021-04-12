@@ -6,6 +6,7 @@
     margin-top: 15px;
     margin-bottom: 15px;
   }
+  // styling for the profile image - responsive styling is further below
   img {
     display: block;
     margin: auto;
@@ -63,6 +64,7 @@
   .main-about {
     width: 80vw;
     margin: 0 auto 45px;
+    // Styling for the profile image on tablet + desktop
     img {
       max-width: 25vw;
       display: inline;
