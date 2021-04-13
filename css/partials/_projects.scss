@@ -5,22 +5,31 @@
 
 .main-projects {
   justify-content: center;
-  // background-color: lightskyblue;
   margin-bottom: 45px;
   h2 {
     margin-top: 15px;
     margin-bottom: 15px;
-    // background-color: lightblue;
+  }
+  #project-intro {
+    width: 100%;
+    p {
+      margin: 10px auto;
+      padding: 0 20px;
+    }
   }
   a {
-    text-decoration: none;
-    color: white
+      color: white;
+    &:hover {
+      text-decoration: none;
+      color: white;
+      font-weight: normal;
+    }
   }
 
   .project {
     @include project-size();
     margin: 20px;
-    background-color: lightblue;
+    background-color: #b11e1e;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -44,8 +53,8 @@
       height: 100%;
       width: 100%;
       opacity: 0;
-      transition: .5s ease;
-      background-color: #008CBA;
+      transition: 0.5s ease;
+      background-color: #008cba;
       text-align: center;
       &:hover {
         opacity: 0.9;
@@ -69,10 +78,26 @@
   /* For tablets: */
   .main-projects {
     width: 80vw;
-    margin: 0 auto 45px; 
-}
+    margin: 0 auto 45px;
+    #project-intro {
+      p {
+        text-align: center;
+        width: 80%;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
+  .main-projects {
+    width: 80vw;
+    margin: 0 auto 45px;
+    #project-intro {
+      p {
+        
+        width: 60%;
+      }
+    }
+  }
 }
