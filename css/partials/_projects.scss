@@ -35,7 +35,7 @@
     flex-wrap: wrap;
     justify-content: center;
     border: 1px solid black;
-    // styling for the project image. The 'object-fit' property was the perfect way to achieve what I wanted. Sometimes an image would be portrait, other times landscape. I wanted to scasle the picture so it filled its parent div entirely, while retaining the proportions
+    // styling for the project image. The 'object-fit' property was the perfect way to achieve what I wanted. Sometimes an image would be portrait, other times landscape. I wanted to scale the picture so it filled its parent div entirely while retaining the proportions
     img {
       object-fit: cover;
       height: 85%;

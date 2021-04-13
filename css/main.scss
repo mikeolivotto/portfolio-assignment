@@ -2,17 +2,21 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap");
 
+// Partials have been created to make it easier to find page-specific styling. Partials are imported here 
 @import "partials/homepage";
 @import "partials/about";
 @import "partials/projects";
 @import "partials/blog";
 
+// Mixin to easily set a border when debugging
 @mixin border {
   border: 1px solid black;
 }
 
+// Variable to easily change the font across the website
 $main-font: "Source Code Pro", monospace;
 
+// Reset browser default styling
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +29,8 @@ body {
   min-height: 100vh;
   position: relative;
   font-family: $main-font;
+  font-weight: 500;
+  font-style: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {

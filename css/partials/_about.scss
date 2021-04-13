@@ -1,5 +1,6 @@
 .main-about {
   align-items: center;
+  // Styling for the line height of text in the about-me section
   line-height: 1.2em;
   padding: 20px;
   h2 {
@@ -23,13 +24,16 @@
       margin: auto;
     }
     .work-exp {
+      
       width: fit-content;
       margin: 20px auto;
       .job {
+        // Styling for the jobs worked. Center-align was hard to read, left works better 
         margin: 15px;
         text-align: left;
       }
       h3 {
+        // 'fit-content' reduces the container size to only be as large as the content. this is a key part to getting the background highlight colour to only be as large as the text, and not the full line
         width: fit-content;
         font-size: 1.3em;
         background-color: rgba(0, 255, 0, 0.5);
@@ -39,6 +43,7 @@
         text-align: left;
       }
       .company {
+        // Bold the company name to make it stand out
         font-weight: bold;
       }
       p {
@@ -47,21 +52,20 @@
     }
   }
   .skills {
+    // fit content so containers would only be as large as the text. This is redundant right now, but useful if I wish to add a background colour in future
     width: fit-content;
     margin: 25px auto;
 
     ul {
       margin: auto;
       margin-bottom: 15px;
+      // Remove the bullet points, Font Awesome icons look better
       list-style: none;
     }
   }
 }
 
-.break {
-  flex-basis: 100%;
-  height: 0;
-}
+
 
 @media only screen and (min-width: 600px) {
   /* For tablets: */
