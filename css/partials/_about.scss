@@ -2,7 +2,6 @@
   align-items: center;
   line-height: 1.2em;
   padding: 20px;
-  // background-color: mediumpurple;
   h2 {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -17,11 +16,9 @@
   }
 
   .experience {
-    // width: fit-content;
     margin-top: 25px;
     text-align: center;
     #resume {
-      // border: 1px solid black;
       width: 70%;
       margin: auto;
     }
@@ -36,7 +33,6 @@
         width: fit-content;
         font-size: 1.3em;
         background-color: rgba(0, 255, 0, 0.5);
-        // background-color: rgba(30, 177, 30, 0.5);
         font-weight: 500;
         line-height: 0.8em;
         margin-bottom: 6px;
@@ -53,12 +49,10 @@
   .skills {
     width: fit-content;
     margin: 25px auto;
-    // background-color: lightblue;
 
     ul {
       margin: auto;
       margin-bottom: 15px;
-      // background-color: lightgreen;
       list-style: none;
     }
   }
