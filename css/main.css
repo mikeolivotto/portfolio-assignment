@@ -41,8 +41,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 45px;
   line-height: 1.2em;
+  padding: 20px;
 }
 
 .main-about h2 {
@@ -107,6 +107,7 @@
 
 .main-about .skills ul {
   margin: auto;
+  margin-bottom: 15px;
   list-style: none;
 }
 
@@ -227,7 +228,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto 45px;
 }
 
 .main-blog .blog {
@@ -356,7 +356,7 @@ nav ul li {
 }
 
 main {
-  margin: 0 2em 3em 2em;
+  margin: 0 auto 45px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: "Source Code Pro", monospace;
