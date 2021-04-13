@@ -60,11 +60,13 @@
 }
 
 .main-about .experience {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   margin-top: 25px;
   text-align: center;
+}
+
+.main-about .experience #resume {
+  width: 70%;
+  margin: auto;
 }
 
 .main-about .experience .work-exp {
@@ -83,8 +85,8 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  background-color: rgba(0, 255, 0, 0.5);
   font-size: 1.3em;
+  background-color: rgba(0, 255, 0, 0.5);
   font-weight: 500;
   line-height: 0.8em;
   margin-bottom: 6px;
@@ -103,6 +105,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin: 25px auto;
 }
 
 .main-about .skills ul {
@@ -122,12 +125,18 @@
   .main-about {
     width: 80vw;
     margin: 0 auto 45px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .main-about img {
     max-width: 25vw;
     display: inline;
     float: left;
     margin: 15px 30px 15px 0;
+  }
+  .main-about .experience .work-exp {
+    margin: 20px auto 0px 0px;
   }
 }
 
@@ -368,6 +377,16 @@ main {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+main a {
+  color: #b11e1e;
+  text-decoration: none;
+}
+
+main a:hover {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 p {
