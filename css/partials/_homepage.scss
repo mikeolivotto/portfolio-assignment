@@ -1,5 +1,5 @@
 .main-home {
-    flex-grow: 1;
+  flex-grow: 1;
   .intro {
     margin: auto;
     h1 {
@@ -7,10 +7,11 @@
       font-weight: 500;
       font-size: 4em;
       line-height: 0.7em;
-    //   background: chocolate;
+      //   background: chocolate;
     }
     h2 {
-        text-align: left;
+      color: #b11e1e;
+      text-align: left;
       font-size: 0.7em;
       font-weight: 200;
       &::before {
