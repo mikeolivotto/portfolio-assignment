@@ -3,10 +3,13 @@
   
   .blog {
     margin: 20px;
-
+  p {
+    line-height: 1.2em;
+  }
   }
   h3 {
     margin-top: 10px;
+    color: #000000;
   }
   // Styling for the blog thumbnails
   img {
