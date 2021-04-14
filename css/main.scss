@@ -9,6 +9,7 @@
 @import "partials/about";
 @import "partials/projects";
 @import "partials/blog";
+@import "partials/blog-post";
 
 // Mixin to easily set a border when debugging
 @mixin border {
@@ -35,10 +36,13 @@ body {
   font-style: normal;
 }
 
+h1 {
+  font-size: 2em;
+}
+
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     text-align: center;
-    
 }
 
 
