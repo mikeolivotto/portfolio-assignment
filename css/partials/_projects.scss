@@ -6,12 +6,14 @@
 .main-projects {
   justify-content: center;
   margin-bottom: 45px;
+  // specific h2 styling (positioning) for the  projects page 
   h2 {
     margin-top: 15px;
     margin-bottom: 15px;
   }
   #project-intro {
     width: 100%;
+    // specific p styling (positioning) for the  projects page 
     p {
       margin: 10px auto;
       padding: 0 20px;
@@ -59,6 +61,7 @@
       &:hover {
         opacity: 0.9;
       }
+      // styling for the text that appears over the project on hovering
       p {
         width: 85%;
         margin-top: 0;

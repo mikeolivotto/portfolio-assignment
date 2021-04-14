@@ -3,10 +3,12 @@
   
   .blog {
     margin: 20px;
+    // increase line height for readability
   p {
     line-height: 1.2em;
   }
   }
+  //set color to black to override link colouring. The h3 should be clickable as a link, but stylised like a regular header
   h3 {
     margin-top: 10px;
     color: #000000;

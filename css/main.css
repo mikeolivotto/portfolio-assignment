@@ -325,12 +325,16 @@
   margin: 20px auto;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 180px;
-  width: 300px;
+  max-height: 180px;
+  max-width: 300px;
 }
 
 @media only screen and (min-width: 600px) {
   /* For tablets: */
+  .main-post img {
+    max-height: 30vh;
+    max-width: 50vw;
+  }
 }
 
 @media only screen and (min-width: 769px) {

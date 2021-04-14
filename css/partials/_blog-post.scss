@@ -5,26 +5,30 @@
     padding-top: 10px;
     margin: 0 20px;
   }
-
+  // styling for h3 specific to the blog post pages 
   h3 {
     margin-top: 10px;
   }
-  // Styling for the blog thumbnails
+  // Styling for the blog image. Also updated in media queries as it should be larger on bigger screens
   img {
     display: block;
     margin: 20px auto;
     object-fit: cover;
-    height: 180px;
-    width: 300px;
+    max-height: 180px;
+    max-width: 300px;
   }
 }
 
-
 @media only screen and (min-width: 600px) {
   /* For tablets: */
-
+  .main-post {
+    // Increasing the size of the image on tablet size and larger
+    img {
+      max-height: 30vh;
+      max-width: 50vw;
+    }
+  }
 }
 @media only screen and (min-width: 769px) {
   /* For desktop: */
-
 }
