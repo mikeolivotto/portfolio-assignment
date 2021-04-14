@@ -36,7 +36,8 @@
         // 'fit-content' reduces the container size to only be as large as the content. this is a key part to getting the background highlight colour to only be as large as the text, and not the full line
         width: fit-content;
         font-size: 1.3em;
-        background-color: rgba(0, 255, 0, 0.5);
+        // background-color: rgba(0, 255, 0, 0.5);
+        background-color: rgba(177, 30, 30, 0.15);
         font-weight: 500;
         line-height: 0.8em;
         margin-bottom: 6px;

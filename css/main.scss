@@ -60,6 +60,7 @@ nav {
     text-decoration: none;
     &:hover {
       font-weight: bold;
+      color: #b11e1e;
     }
     &::after {
       content: attr(title);
@@ -67,6 +68,7 @@ nav {
       visibility: hidden;
       overflow: hidden;
       font-weight: bold;
+      color: #b11e1e;
     }
   }
   ul {
@@ -116,6 +118,9 @@ footer {
     width: 100%;
   display: flex;
   justify-content: center;
+  a:hover {
+    color: #b11e1e;
+  } 
   div {
     margin: 10px;
     i {

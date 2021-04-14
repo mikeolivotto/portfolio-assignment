@@ -19,6 +19,7 @@
 }
 
 .main-home .intro h2 {
+  color: #b11e1e;
   text-align: left;
   font-size: 0.7em;
   font-weight: 200;
@@ -87,7 +88,7 @@
   width: -moz-fit-content;
   width: fit-content;
   font-size: 1.3em;
-  background-color: rgba(0, 255, 0, 0.5);
+  background-color: rgba(177, 30, 30, 0.15);
   font-weight: 500;
   line-height: 0.8em;
   margin-bottom: 6px;
@@ -174,7 +175,7 @@
   height: 250px;
   width: 250px;
   margin: 20px;
-  background-color: #b11e1e;
+  background-color: rgba(177, 30, 30, 0.8);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,6 +352,7 @@ nav a {
 
 nav a:hover {
   font-weight: bold;
+  color: #b11e1e;
 }
 
 nav a::after {
@@ -359,6 +361,7 @@ nav a::after {
   visibility: hidden;
   overflow: hidden;
   font-weight: bold;
+  color: #b11e1e;
 }
 
 nav ul {
@@ -423,6 +426,10 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+footer a:hover {
+  color: #b11e1e;
 }
 
 footer div {
