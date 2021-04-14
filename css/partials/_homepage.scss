@@ -2,12 +2,14 @@
   flex-grow: 1;
   .intro {
     margin: auto;
+    // separate styling for h1 on homepage
     h1 {
       text-align: left;
       font-weight: 500;
       font-size: 4em;
       line-height: 0.7em;
     }
+    // spearate styling for h2 on homepage
     h2 {
       color: #b11e1e;
       text-align: left;
