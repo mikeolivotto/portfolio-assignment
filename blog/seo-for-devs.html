@@ -48,14 +48,13 @@
           <!-- blog text below -->
           
           <p>Along with web development my background is in digital marketing and, more precisely, <abbr title="Search Engine Optimisation">SEO</abbr>. The average web developer may never need to know the intricacies of this digital marketing discipline, but just about every dev will eventually need to develop at least a surface level understanding oh what it aims to achieve. What follows is a primer to help any developer get up to speed on the basics of SEO.</p>
-          <h2>Intro</h2>
+
           <p>In this guide, I will cover and explain:</p>
           <ul>
             <li>Why should devs care about SEO?</li>
             <li>What is SEO?</li>
             <li>Search Engines and how do they work?</li>
             <li>How does SEO work?</li>
-            <li>An example</li>
           </ul>
           <h2>Why should devs care about SEO?</h2>
           <p>You are in <em>web</em> development. Search engines underpin the navigation of the modern web. Web development goes hand in hand with search engines trying to 'understand' the internet and all its pages. Where the two meet is where your expertise will make all the difference</p>
@@ -89,11 +88,11 @@
           <h2>How does SEO work?</h2>
           <p>In the early days of search engines, sites were manually submitted and indexes would be arranged and categorised in very manual and/or primitive ways. One way of categorisation was by keyword density, which is really just a way of saying 'the more times a specific word appears on a page'. The reasoning went that if a page said the word 'cat' 50 times, it was probably about cats. But there's a pretty glaring flaw in this method; it is incredibly easy to game a system that simply relies on counting how many times a word is mentioned.</p>
           <p>Things have become a lot more sophisticated an complex, with Google looking at over 200 signals that help them determine a site's relevance to any given search query. The full set of factors are unknown to prevent blatant gaming of the system, but through many studies of correlation, there are 3 generally accepted pillars for improving a site's search engine optimisation</p>
-          <ul>
+          <ol>
             <li>Links from other websites</li>
             <li>Content</li>
             <li>Technical Factors</li>
-          </ul>
+          </ol>
           <h3>Links</h3>
           <p>As a dev, this is the least concerning area for you. As an 'off page factor', there's not much you can do but to quickly explain, links from other websites act as a 'vote of confidence' in your website and indicate its quality and authority. Generally more links = better, but part of the equation includes links from <em>relevant</em> websites. It's more telling if a page about cats, for example, has links from veterinarians, pet food companies and other pet related blogs, than if they have a bunch of links from completely unrelated websites</p>
           <h3>Content</h3>
@@ -106,11 +105,39 @@
           <p>So if a search engine is aiming to keep users on its platform, it needs a product that does a great job of satisfying user needs - exactly what you've probably been thinking about in the bigger picture of building whatever project you're working on now! Therefore, a great search engine should be great at delivering results that its users (ie. humans) want to see. So search engines have a vested interest in promoting sites that are built to satisfy human searchers, not robots.</p>
           <h3>What is a human friendly website?</h3>
           <h4>Content serving an actual need</h4>
-          <p>We spoke about content before. You likely don't need to worry too much about this, but just know that it should be informative and useful, and avoid black hat (ie. dodgy) tactics such as keyword stuffing to try game the search engines</p>
+          <p>We spoke about content before. You likely don't need to worry too much about this, but just know that it should be informative and useful, and avoid black hat tactics such as keyword stuffing to try game the search engines</p>
           <h4>Accessible</h4>
-          <p>Remember when you groaned about the pointlessness of alt tags, aria labels, semantic tags and so on? They truly make accessing the web much easier for people who rely on assistive technologies, but even if you feel that's a very small demographic within your audience, search engines care that your site can be easily used by everyone and will consider this in their algorithms. If absolutely nothing else, it's 'best practice' that can only work in your favour, so why not?</p>
+          <p>Remember when you groaned about the pointlessness of alt tags, aria labels, semantic tags and so on? They truly make accessing the web much easier for people who rely on assistive technologies, but even if you feel that's a negligibly small demographic within your audience, search engines care that your site can be easily used by everyone and will consider this in their algorithms. If absolutely nothing else, it's 'best practice' that can only work in your favour, so why not?</p>
           <h4>Easy to use</h4>
-          <p></p>
+          <p>Now here's where you need to really pay attention. Not surprisingly, if your site is difficult to use then that's ultimately poor user experience, and therefore a site that search engines won't want to recommend to their users. Of course making a site 'easy to use' should be by design, however, we all know that in the world of web development you will always encounter unforseen issues. While you should absolutely be building something that works well up front, I'm talking more about some of the aspects that may not be apparent immediately, or may be likely to change and break over time as the site evolves. Things to look out for include slow loading pages, <a href="https://web.dev/cls/">content shift</a>, 404s, broken forms etc, and it is your responsibility as a dev to continually check for these and build in such a way to avoid these frustrating scenarios.</p>
+          <h3>OK, OK, build for robots too*</h3>
+          <p>* to the extent that they need to be able to access and 'read' your site.</p>
+          <p>To state the obvious, search engines need to be able to find and access your site in order to know it exists and ultimately add it to its index. Not only that, they still need to be able to scan the contents of the site to gain an understanding of what topics any given pages cover so that it can surface the page in a relevant search. From your perspective as a developer, there are 3 main things to consider when building for the robots:</p>
+          <ol>
+            <li>HTML tags</li>
+            <li>robots.txt</li>
+            <li>sitemap.xml</li>
+          </ol>
+          <h4>HTML tags</h4>
+          <p>This should be the most obvious, and the simplest for you without even really thinking about it. Every HTML tag provides context to machines reading your site; from the metadata that states what language and location the pages serve, to the page title, semantic tags describing logical sections of the page (eg. separating an article from the header and footer sections), headers, and so on. Most of these you're likely to include simply out of good dev practice, so keeping this knowledge in mind acts as a reminder for <em>why</em> it is best practice.</p>
+          <h4>robots.txt</h4>
+          <p>One of the first things a search engine will do when crawling your site is look for a 'robots.txt' file in the root folder. This file acts as a set of instructions to crawlers about what the crawler can or can't request from your website, and from an SEO standpoint this is an ideal place to specify the location of your sitemap (which we will discuss in the next section).</p>
+          <p>Although robots.txt acts as a set of instructions to crawlers,<a href="https://developers.google.com/search/docs/advanced/robots/intro">in the words of Google</a>, the main purpose of robots.txt is "mainly to avoid overloading your site with requests; <strong>it is not a mechanism for keeping a web page out of Google</strong>. To keep a web page out of Google, you should use noindex directives, or password-protect your page."</p>
+          <h4>sitemap.xml</h4>
+          <p>The sitemap is another machine-readable file that tells crawlers about where to find all the pages on your website. A search engine/crawler can technically glean the same information by following internal links throughout your site, but the sitemap offers a few advantages. First, if your site is large (in the hundreds/thousands of pages), a sitemap is more efficient for a search engine to crawl and get your pages indexed reasonably quickly. The second advantage is if you have 'orphan pages' (ie. pages that are not linked from any other page on your site)  - which, by the way, is generally not recommended - then crawlers will still be able to find that page.</p>
+          <p>And just a final note on the sitemap: unlike robots.txt, it doesn't necessarily have to be called 'sitemap.xml'. In fact, you'll likely discover that certain CMS' and plugins break sitemaps down into several files (thus, with several names). Why do I mention this? Well, going back to our discussion of robots.txt, this is another reason why it's important to explicitly tell crawlers where to find your sitemap, so include it!</p>
+          <h3>A cautionary tale</h3>
+          <p>Sometimes our best intentions can result in unintended consequences. Take the case of a client of mine who had been experiencing their website continually going down due to overloaded resources from constant automated crawls. The developer's seemingly intuitive solution was to set a directive to prevent <em>all</em> crawlers from accessing the site. It solved, their problem, but in a wholly undesirable way.</p>
+          <p>Virtually overnight, the site's traffic from search engines dropped to practically zero. So now my client had a website that was <em>working</em>, but no one could find it! Clearly, this wasn't a reasonable solution. What the client really wanted to do was ban traffic from specific origins using their IP range, rather than blanket-banning crawlers, which was eventually achieved by utilising the .htaccess file (a topic out of scope for this article). Once that was done, the original directive was removed from the robots.txt file and search crawlers were once again able to find and crawl the site for indexing. Over the following few months the site made a quick return to its previous traffic levels and was once again ranking for well over 300 keywords.</p>
+          <h2>Resources & Tools</h2>
+          <p>Below is a list of some of the most useful tools & resources I recommend for performing SEO from a technical perspective:</p>
+          <ul>
+            <li>Google Search Console (free) - Connect your site to this and Google will give you pretty good pointers on when your site is doing something that makes it difficult to crawl and index your site. Amazing tool for diagnosing issues.</li>
+            <li><a href="https://developers.google.com/web/tools/lighthouse#devtools">Google Lighthouse Tools</a> (free) - Scan your site and be provided with a list of metrics that Google considers important to a well-optimised page, including sitespeed, cumulative layout shift, and accessibility.</li>
+            <li>Screaming Frog (limited free tier) - A crawler and scraper in one. Amazing tool for crawling your site in a similar way to a search engine and discovering issues such as 404s and orphan pages.</li>
+            <li></li>
+            <li></li>
+          </ul>
         </article>
       
 
