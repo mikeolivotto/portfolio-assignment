@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link to Font Awesome to use their icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" integrity="sha256-7ucoO85H9jABOW1Yys6S9XBY6gxe5UZXnoQWCaNZ1S4= sha384-No+VI8Wwi7LzQn9F3FVzBXMxHH2DQpi1C2B8xrgG/EcPXRuAv1gUo8zA92+F+sEz sha512-OklCcBCIoF37PTVwdOPt+vhivH07WYW1aWQF4Q+To/YXAmECvkqMk0el7MQGwch4NN0o7320MLrAZTE3car/Nw==" crossorigin="anonymous">
+
+    <!-- Internal style stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css"
+      integrity="sha256-rWjOax6Q/Pk12PZmlRbNMqOROD1/D9rU+lNvXF943w0= sha384-U2InUUayquVpUFIItMHkb7xLIfdhbh/cdXyMfX+XnIBNn3JFKZn5XNihDlnqtTdC
+      sha512-aapfsGMfF7+8NJKgewe+2Ku5j+GgxYzhCOhmBmQSx6/m3Ljc9H5ZzJQa6IIi/Z9X6+NFbPUg+uaZTRnGe/V1YQ=="
+      crossorigin="anonymous">
+      <link rel="icon" href="/favicon/favicon-16x16.png" type="image/gif" sizes="16x16">
+      <link rel="icon" href="/favicon/favicon-32x32.png" type="image/gif" sizes="32x32">
+    <title>SEO for Devs - Mike Olivotto</title>
+  </head>
+  <body>
+    <!-- header containing logo and nav bar -->
+
+    <header>
+      <nav>
+        <a href="/index.html" class="logo">
+          <i class="fas fa-code" aria-label="Home"></i>
+        </a>
+        <ul>
+          <li><a href="/about.html" title="About">About</a></li>
+
+          <li><a href="/projects.html" title="Projects">Projects</a></li>
+
+          <li><a href="/blog.html" title="Blog">Blog</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+
+    <main class="main-post col-s-9 col-8">
+      
+      <!-- Article element used to denote blog post -->
+        
+      <article>
+          <h1>SEO for Devs</h1>
+          <!-- blog image. -->
+            <img src="/img/blog-img.png" alt="sample blog main image">
+          <p class="date-pub">Date published: XX/XX/2021</p>
+          <!-- blog text below -->
+          
+          <p>Along with web development my background is in digital marketing and, more precisely, <abbr title="Search Engine Optimisation">SEO</abbr>. The average web developer may never need to know the intricacies of this digital marketing discipline, but just about every dev will eventually need to develop at least a surface level understanding oh what it aims to achieve. What follows is a primer to help any developer get up to speed on the basics of SEO.</p>
+          <h2>Intro</h2>
+          <p>In this guide, I will cover and explain:</p>
+          <ul>
+            <li>Why should devs care about SEO?</li>
+            <li>What is SEO?</li>
+            <li>Search Engines and how do they work?</li>
+            <li>How does SEO work?</li>
+            <li>An example</li>
+          </ul>
+          <h2>Why should devs care about SEO?</h2>
+          <p>You are in <em>web</em> development. Search engines underpin the navigation of the modern web. Web development goes hand in hand with search engines trying to 'understand' the internet and all its pages. Where the two meet is where your expertise will make all the difference</p>
+          <p>As part of your career in web development, at one point or another you will work on a project that is public-facing and you (or your boss, or clients) will want to attract users. Attracting users to your site requires a product that is functional, works well and is overall well built. But what does any of this have to do with search? Well, to answer that we first need to understand...</p>
+          <h2>What is SEO?</h2>
+          <p><strong>Search Engine Optimisation</strong>: The process of improving quality and quantity of visitors to your site from a search engine.</p>
+          <p>In other words, making improvements related to a website so that when someone searches for something related to you, your product, company etc, your website will ideally be one of the first results to show up.</p>
+          <h3>Why do it?</h3>
+          <p>Now that we know what SEO is, it should be fairly clear why we'd want to do it. Here are a few use cases:</p>
+          <ul>
+            <li>Find users</li>
+            <li>Sell products and services</li>
+            <li>Generate ad or affilliate revenue</li>
+            <li>Spread ideas & information</li>
+          </ul>
+          <p>All of those, with the possible exception of the last one, ultimately come down to money. She/He who owns the search makes the $$$.</p>
+          <p>Alright, so how is SEO actually performed? Well, before we get to that we need a basic understanding of search engines.</p>
+          <h3>"Google it!"</h3>
+          <p>I'm not actually telling you to look up the answer. But you know exactly what I mean by that phrase: 'Go search for it on the internet'</p>
+          <p>With over 90% market share, it's no wonder that Google has become synonymous with searching for something on the internet. But Google is far from the only search engine out there. You may also know of Yahoo!, Bing, DuckDuckGo, Baidu, Yandex... For our purposes as devs, these all work somewhat similarly, but we often look to Google as the gold standard of search and generally accept that what is viewed favourably by them is likely viewed favourably by the rest.</p>
+          <p>Don't get too hung up on the differences between any of them, as you'll soon learn we don't need to focus too heavily on catering to a search engine directly.</p>
+          <h3>Anatomy of a SERP</h3>
+          What the hell is a <abbr title="Search Engine Results Page">SERP</abbr>? It's the results page you see after making a search, and generally consists of: 
+          <ul>
+            <li>Ads - the search engine has to make money somehow</li>
+            <li>Featured Snippets - Small bits of information that may assist in answering the search, such as 'People also ask'</li>
+            <li>Search results - The pages and sites that return as results to the search query</li>
+          </ul>
+          <p>SEO aims to target those last two items. We don't need to focus too much on the specifics of all of this, except to say that we're aiming to be as high up in the search results as possible.</p>
+          <p>Look at the example, there are only 4 results shown 'above the fold' (visible part of the page without scrolling), and that's for a search that doesn't have any ads. Throw ads into the mix and the first result may be the only one immediately visible to searchers</p>
+          <h2>How does SEO work?</h2>
+          <p>In the early days of search engines, sites were manually submitted and indexes would be arranged and categorised in very manual and/or primitive ways. One way of categorisation was by keyword density, which is really just a way of saying 'the more times a specific word appears on a page'. The reasoning went that if a page said the word 'cat' 50 times, it was probably about cats. But there's a pretty glaring flaw in this method; it is incredibly easy to game a system that simply relies on counting how many times a word is mentioned.</p>
+          <p>Things have become a lot more sophisticated an complex, with Google looking at over 200 signals that help them determine a site's relevance to any given search query. The full set of factors are unknown to prevent blatant gaming of the system, but through many studies of correlation, there are 3 generally accepted pillars for improving a site's search engine optimisation</p>
+          <ul>
+            <li>Links from other websites</li>
+            <li>Content</li>
+            <li>Technical Factors</li>
+          </ul>
+          <h3>Links</h3>
+          <p>As a dev, this is the least concerning area for you. As an 'off page factor', there's not much you can do but to quickly explain, links from other websites act as a 'vote of confidence' in your website and indicate its quality and authority. Generally more links = better, but part of the equation includes links from <em>relevant</em> websites. It's more telling if a page about cats, for example, has links from veterinarians, pet food companies and other pet related blogs, than if they have a bunch of links from completely unrelated websites</p>
+          <h3>Content</h3>
+          <p>Slightly more relevant to you as a dev than links, 'content' is really just a fancy way of saying text, images, video, audio, or any other media type that visitors come to your site for. What is in that media is likely not your concern, but it does relate to the next point..</p>
+          <h3>Technical Factors</h3>
+          <p>Now is your time to shine! Technical factors means anything that relates to the functioning and build of the site, everything from metadata to accessibility, even resource loading (large images, slow load times etc). Your job as a dev is to ensure the site works well, runs smooth, and is usable for its intended purpose.</p>
+          <p>Pretty simple, right? It is, and it all comes to down to one major principle:</p>
+          <h2>BUILD FOR HUMANS, NOT ROBOTS</h2>
+        </article>
+      
+
+    </main>
+    <!-- footer component -->
+
+    <footer>
+      <a href="https://www.linkedin.com/in/mikeolivotto/" target="_blank">
+        <div class="footer-icons">
+          <i class="fab fa-linkedin" aria-label="LinkedIn"></i>
+        </div>
+      </a>
+      <a href="https://github.com/mikeolivotto" target="_blank">
+        <div class="footer-icons">
+          <i class="fab fa-github" aria-label="GitHub"></i>
+        </div>
+      </a>
+      <a href="https://codepen.io/mike-olivotto" target="_blank">
+        <div class="footer-icons">
+          <i class="fab fa-codepen" aria-label="CodePen"></i>
+        </div>
+      </a>
+      <div>| mike@mikeolivotto.com</div>
+    </footer>
+  </body>
+</html>
